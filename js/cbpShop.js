@@ -29,8 +29,6 @@
 					item = content.querySelector( 'div.cbp-pgitem' ),
 					rotate = content.querySelector( 'span.cbp-pgrotate' );
 
-				rotate.addEventListener( 'click', function() { self._rotateItem( this, item ); } );
-				
 				if( self.touch ) {
 
 					rotate.addEventListener( 'touchstart', function() { self._rotateItem( this, item ); } );
@@ -41,6 +39,9 @@
 					
 					size.addEventListener( 'touchstart', function() { self._showItemOptions( this ); } );
 					color.addEventListener( 'touchstart', function() { self._showItemOptions( this ); } );
+				}
+				else {
+					rotate.addEventListener( 'click', function() { self._rotateItem( this, item ); } );
 				}
 			} );
 		},
