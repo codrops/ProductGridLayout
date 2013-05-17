@@ -202,7 +202,6 @@
 .no-touch .cbp-pgoptions li:hover,
 .cbp-pgoptions li.cbp-pgoption-active {
 	background: #47a3da;
-	color: #fff;
 }
 
 .cbp-pgoptions li:before,
@@ -214,7 +213,9 @@
 	color: #47a3da;
 }
 
-.cbp-pgoptions li.cbp-pgoption-active > span {
+.no-touch .cbp-pgoptions li:hover:before,
+.no-touch .cbp-pgoptions li:hover > span,
+.cbp-pgoptions li.cbp-pgoption-active > span  {
 	color: #fff;
 }
 
